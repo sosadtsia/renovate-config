@@ -1,16 +1,8 @@
 {
-    "automergeStrategy": "merge-commit",
     "baseBranches": ["main"],
     "labels": ["dependencies"],
     "rebaseWhen": "conflicted",
-    "ignoreTests": true,
-    "prConcurrentLimit": 10,
-    "prHourlyLimit": 5,
-    "branchConcurrentLimit": 20,
-    "semanticCommits": "enabled",
-    "semanticCommitType": "chore",
-    "semanticCommitScope": "deps",
-    "semanticCommitMessage": "{{upgradeType}} {{depName}} from {{currentVersion}} to {{newVersion}}",
+    "prConcurrentLimit": 0,
     "reviewersFromCodeOwners": true,
     "assigneesFromCodeOwners": true,
     "packageRules": [{
