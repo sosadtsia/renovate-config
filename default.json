@@ -2,11 +2,18 @@
     "baseBranches": ["main"],
     "labels": ["dependencies"],
     "rebaseWhen": "conflicted",
+    "pruneBranchAfterAutomerge": true,
     "prConcurrentLimit": 0,
     "reviewersFromCodeOwners": true,
     "assigneesFromCodeOwners": true,
-    "packageRules": [{
-        "matchManagers": ["*"],
-        "pinDigests": false
-    }]
+    "packageRules": [
+        {
+            "matchManagers": ["*"],
+            "pinDigests": false
+        },
+        {
+            "matchUpdateTypes": ["minor", "patch"],
+            "automerge": true
+        }
+    ]
 }
